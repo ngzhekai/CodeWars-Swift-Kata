@@ -1,4 +1,5 @@
 /* 
+
   --> Instruction <--
   There is an array with some numbers. All numbers are equal except for one. Try to find it!
 
@@ -8,6 +9,7 @@
 
   The tests contain some very huge arrays, so think about performance.
   --> Instruction <--
+
 */ 
 
 
