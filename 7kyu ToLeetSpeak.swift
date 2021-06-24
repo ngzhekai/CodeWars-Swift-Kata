@@ -39,7 +39,7 @@ In this kata we use a simple LeetSpeak dialect. Use this alphabet:
   Z : '2'
 }
 */
-
+________________________________________________________________________________________________
 
 // < My Solution >
 
@@ -80,7 +80,7 @@ func toLeetSpeak(_ s : String) -> String {
   return returnString
 }
 
-
+________________________________________________________________________________________________
 
 // < Best Solution>
 
@@ -103,9 +103,10 @@ func toLeetSpeak(_ s : String) -> String {
 }
 
 //Use the nil-coalescing operator (??) to supply a default value in case the Optional instance is nil. 
-
+______________________________________________________________________________________________________
 
 // < Other Cool Solution>
+
 func toLeetSpeak(_ s : String) -> String {
 // your code
   var output = ""
