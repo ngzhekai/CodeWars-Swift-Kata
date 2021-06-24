@@ -103,3 +103,25 @@ func toLeetSpeak(_ s : String) -> String {
 }
 
 //Use the nil-coalescing operator (??) to supply a default value in case the Optional instance is nil. 
+
+
+// < Other Cool Solution>
+func toLeetSpeak(_ s : String) -> String {
+// your code
+  var output = ""
+  
+  output = s.replacingOccurrences(of:"A", with: "@")
+  output = output.replacingOccurrences(of:"B", with: "8")
+  output = output.replacingOccurrences(of:"C", with: "(")
+  output = output.replacingOccurrences(of:"E", with: "3")
+  output = output.replacingOccurrences(of:"G", with: "6")
+  output = output.replacingOccurrences(of:"H", with: "#")
+  output = output.replacingOccurrences(of:"I", with: "!")
+  output = output.replacingOccurrences(of:"L", with: "1")
+  output = output.replacingOccurrences(of:"O", with: "0")
+  output = output.replacingOccurrences(of:"S", with: "$")
+  output = output.replacingOccurrences(of:"T", with: "7")
+  output = output.replacingOccurrences(of:"Z", with: "2")
+  
+  return output
+}
