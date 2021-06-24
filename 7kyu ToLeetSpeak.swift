@@ -84,21 +84,22 @@ func toLeetSpeak(_ s : String) -> String {
 
 // < Best Solution>
 
-let dict : [Character : Character] =
-    [   "A" : "@",
-        "B" : "8",
-        "C" : "(",
-        "E" : "3",
-        "G" : "6",
-        "H" : "#",
-        "I" : "!",
-        "L" : "1",
-        "O" : "0",
-        "S" : "$",
-        "T" : "7",
-        "Z" : "2",
-]
-
 func toLeetSpeak(_ s : String) -> String {
-  return String(s.map { dict[$0] ?? $0 })
+  let dict : [Character : Character] = 
+    [ "A" : "@",
+      "B" : "8",
+      "C" : "(",
+      "E" : "3",
+      "G" : "6",
+      "H" : "#",
+      "I" : "!",
+      "L" : "1",
+      "O" : "0",
+      "S" : "$",
+      "T" : "7",
+      "Z" : "2"
+    ]
+  return String(s.map { dict[$0] ?? $0})
 }
+
+//Use the nil-coalescing operator (??) to supply a default value in case the Optional instance is nil. 
